@@ -1,3 +1,77 @@
-.mydiv {
-	color: blue;
+body {
+font-family: 'Playfair Display SC', serif;
+	line-height: 1.5;
+	color: rgba(0,0,0,0.9);
+	background: url('../images/whitehartb&w.jpg');
+  	background-size: cover;
+  	background-position: center;
+  	background-attachment: fixed;
+
 }
+
+.container {
+  position: relative;
+  width: 900px;
+  margin: auto;
+  margin-top: 20px;
+  background: rgba(0,0,0,0);
+  padding: 5px;
+  border-radius: 35px; 
+  text-align: center;
+  padding-right: 15px;
+}
+
+h1	{
+	position: relative;
+	font-size: 60px;
+	margin-bottom: -70px;
+	margin-top: -12px;
+	padding-bottom: 100px;
+	color: rgb(0,58,99);
+}
+
+a {
+	position: relative;
+	text-decoration: none;
+	margin-top: -300px;
+
+}
+
+.logo {
+	height: 100px;
+	position: relative;
+    left: 31%;
+    top: 90px;
+    opacity: 0.95;
+}
+
+.logo2 {
+	height: 515px;
+	opacity: 0.2;
+	float: left;
+	margin-top: -415px;
+}
+
+.logo3 {
+	height: 515px;
+	float: right;
+    margin-top: -415px;
+	opacity: 0.2;
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+iframe {
+	padding-top: 50px
+}
+
+.social {
+	margin-left: 47%;
+}
+	
+	}
+
