@@ -1,3 +1,85 @@
-#box {
-  background-color: green;
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+aside,
+main {
+    padding: 0 1.5rem 0 0;
+}
+
+aside {
+    flex: 1 1 30%;
+}
+
+main {
+    flex: 1 1 70%;
+}
+
+h1, h1 + p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+#rotate-z {
+    animation: animatez 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animatez {
+    30% {
+        transform: rotateZ(-20deg);
+    }
+    90% {
+        transform: rotateZ(20deg);
+    }
+}
+
+div.timer-tool-div {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0 1rem;
+}
+
+div.timer-tool-div div.flex {
+  align-items: center;
+}
+
+div.timer-tool-div div.timer {
+    flex: 1 1 60%;
+    font-size: 4.5rem;
+}
+
+div.timer-tool-div svg {
+  flex: 1 1 40%;
+  width: 100%;
+}
+
+p.process {
+  font-size: 2rem;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  padding: 2rem;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
