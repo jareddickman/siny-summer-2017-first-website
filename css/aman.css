@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'superscr';
+    src: url('../fonts/SUPERSCR.TTF');
+}
+@font-face {
+    font-family: 'hellovetica';
+    src: url('../fonts/hellovetica.TTF');
+}
+h1, h2, h3, h4, h5 {
+    font-family: superscr;
+    vertical-align:baseline
+}
+.navContainer {
+    background-color: #FFFCE6;
+
+}
+body > div.container-fluid.middle-bit > div > div > div > a > h4{
+  font-weight: lighter;
+  font-size: 60px;
+  color: #FFFCE6;
+}
+body > div.container-fluid.middle-bit > div > div > div > a > p {
+  font-family: hellovetica;
+  color: #FFFCE6;
+  font-size: 100%;
+}
+body > nav > div > div > ul > li > a {
+  font-size: 150%;
+}
+.navbar {
+  font-family: superscr;
+  color: black;
+}
+.navbar-brand {
+  font-size: 300%;
+  font-family: superscr;
+  color: black;
+}
+h2.port {
+  font-size: 300%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about-bit {
+  background-color: #F24D16;
+}
+.middle-bit {
+  background-color: #FFFCE6;
+}
+.top-bit {
+  background-color: #4CD4B0;
+  padding-top: 90px;
+}
+.intro-text {
+  font-family: hellovetica;
+  color: #FFFCE6;
+  font-size: 100%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+h1 small {
+  color: grey;
+  font-size: 50%;
+}
+.box{
+    box-shadow:0 0 4px grey;
+    position:relative;
+}
+.box:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(45deg, #141414 0%, #691100 40%, #1b1b1b 100%);
+    opacity: 0.3;
+    transition:all 0.5s ease;
+}
+.box img{
+    width:100%;
+    height: auto;
+}
+.box .box-content{
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 38px;
+    transition: all 0.35s ease 0s;
+}
+.box:hover .box-content{
+    background: rgba(0,0,0,0.5);
+}
+.box .box-content:after{
+    content: "";
+    border: 7px solid #fff;
+    position: absolute;
+    top:21px;
+    left: 20px;
+    right: 30px;
+    height: 35%;
+    transition: all 0.35s ease 0s;
+}
+.box:hover .box-content:after{
+    top:60%;
+}
+.box .title{
+    color:#fff;
+    font-size:20px;
+    font-weight: bolder;
+    text-transform:uppercase;
+}
+.box .description{
+    position: relative;
+    top:5%;
+    color:#fff;
+    opacity:0;
+    transition: all 0.35s ease 0s;
+}
+.box:hover .description{
+    top:33%;
+    opacity:1;
+}
+@media only screen and (max-width: 990px) {
+    .box{
+        margin-bottom:15px;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .box .title{ font-size: 15px;}
+    .box .description{ font-size: 13px; }
+    .box:hover .description{ top:48%; }
+}
